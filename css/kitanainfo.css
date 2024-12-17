@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Permanent Marker", cursive;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 50px 0;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to bottom, #1a1a1a, #002d5b);
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header .logo h2 a {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    background-color: #111;
+    padding: 50px;
+}
+
+.about-section img {
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Gallery Section */
+.gallery-section {
+    background-color: #000;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Vote Section */
+.vote-section {
+    text-align: center;
+    background-color: #111;
+}
+
+.vote-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.vote-card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.vote-card:hover {
+    transform: scale(1.05);
+}
+
+.vote-card img {
+    width: 200px;
+    height: auto;
+}
+
+.vote-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.vote-button.blue {
+    background-color: #003366;
+}
+
+.vote-button.red {
+    background-color: #a80000;
+}
+
+.vote-button.yellow {
+    background-color: #d4af37;
+}
+
+.vote-button:hover {
+    opacity: 0.8;
+}
